@@ -24,8 +24,8 @@ const override = css`
 `;
 
 export const directions = {
-	'/react-website-prototype/': () => <Root />,
-	'/react-website-prototype/About': () => (
+	'/': () => <Root />,
+	'/About': () => (
 		<Suspense
 			fallback={
 				<LoaderContainer>
@@ -41,7 +41,7 @@ export const directions = {
 			<About />
 		</Suspense>
 	),
-	'/react-website-prototype/Sites': () => (
+	'/Sites': () => (
 		<Suspense
 			fallback={
 				<LoaderContainer>
@@ -52,7 +52,7 @@ export const directions = {
 			<Sites />
 		</Suspense>
 	),
-	'/react-website-prototype/Blog': () => (
+	'/Blog': () => (
 		<Suspense
 			fallback={
 				<LoaderContainer>
@@ -63,7 +63,7 @@ export const directions = {
 			<Blog />
 		</Suspense>
 	),
-	'/react-website-prototype/Code': () => (
+	'/Code': () => (
 		<Suspense
 			fallback={
 				<LoaderContainer>
