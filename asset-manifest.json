@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/react-website-prototype/static/css/main.87411b29.chunk.css",
+    "main.js": "/react-website-prototype/static/js/main.6e03fdcd.chunk.js",
+    "main.js.map": "/react-website-prototype/static/js/main.6e03fdcd.chunk.js.map",
+    "runtime-main.js": "/react-website-prototype/static/js/runtime-main.68f65aff.js",
+    "runtime-main.js.map": "/react-website-prototype/static/js/runtime-main.68f65aff.js.map",
+    "static/js/2.82d3730c.chunk.js": "/react-website-prototype/static/js/2.82d3730c.chunk.js",
+    "static/js/2.82d3730c.chunk.js.map": "/react-website-prototype/static/js/2.82d3730c.chunk.js.map",
+    "static/css/3.b07ff35c.chunk.css": "/react-website-prototype/static/css/3.b07ff35c.chunk.css",
+    "static/js/3.cbf97b0f.chunk.js": "/react-website-prototype/static/js/3.cbf97b0f.chunk.js",
+    "static/js/3.cbf97b0f.chunk.js.map": "/react-website-prototype/static/js/3.cbf97b0f.chunk.js.map",
+    "static/js/4.619979b0.chunk.js": "/react-website-prototype/static/js/4.619979b0.chunk.js",
+    "static/js/4.619979b0.chunk.js.map": "/react-website-prototype/static/js/4.619979b0.chunk.js.map",
+    "static/js/5.1b317f4d.chunk.js": "/react-website-prototype/static/js/5.1b317f4d.chunk.js",
+    "static/js/5.1b317f4d.chunk.js.map": "/react-website-prototype/static/js/5.1b317f4d.chunk.js.map",
+    "static/js/6.90316984.chunk.js": "/react-website-prototype/static/js/6.90316984.chunk.js",
+    "static/js/6.90316984.chunk.js.map": "/react-website-prototype/static/js/6.90316984.chunk.js.map",
+    "static/js/7.61714134.chunk.js": "/react-website-prototype/static/js/7.61714134.chunk.js",
+    "static/js/7.61714134.chunk.js.map": "/react-website-prototype/static/js/7.61714134.chunk.js.map",
+    "index.html": "/react-website-prototype/index.html",
+    "precache-manifest.23e73d74dfe84dbac4d79509f170e645.js": "/react-website-prototype/precache-manifest.23e73d74dfe84dbac4d79509f170e645.js",
+    "service-worker.js": "/react-website-prototype/service-worker.js",
+    "static/css/3.b07ff35c.chunk.css.map": "/react-website-prototype/static/css/3.b07ff35c.chunk.css.map",
+    "static/css/main.87411b29.chunk.css.map": "/react-website-prototype/static/css/main.87411b29.chunk.css.map",
+    "static/js/3.cbf97b0f.chunk.js.LICENSE.txt": "/react-website-prototype/static/js/3.cbf97b0f.chunk.js.LICENSE.txt",
+    "static/media/website-collaboration-800-500.gif": "/react-website-prototype/static/media/website-collaboration-800-500.fbdfd87a.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68f65aff.js",
+    "static/css/3.b07ff35c.chunk.css",
+    "static/js/3.cbf97b0f.chunk.js",
+    "static/css/main.87411b29.chunk.css",
+    "static/js/main.6e03fdcd.chunk.js"
+  ]
+}
