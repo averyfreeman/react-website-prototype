@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Fade from 'react-reveal';
-import styled from 'styled-components';
 import * as theme from 'Styles/Shared/styledThemes';
 import SitesList from 'Components/Shared/SitesList';
 import sites from 'Lists/sites';
@@ -8,64 +7,13 @@ import {
 	AppLogo,
 	BottomRow,
 	CenteredRow,
+	ChalkBoard,
 	CycleColor,
-	Heading
+	Heading,
+	SiteBadge,
+	SiteLink
 } from 'Styles/Shared/PageStyles';
-
-const SiteBadge = styled.div`
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 20px;
-	display: block;
-	height: 10rem;
-	margin: 2rem auto;
-	opacity: 0.6;
-	padding: 1rem;
-	transition: all 200ms ease;
-	vertical-align: middle;
-	width: 10rem;
-
-	&:hover {
-		box-shadow: 3px 3px 6px black;
-		opacity: 1;
-		transition: all 200ms ease;
-		transform: scale(1.1);
-	}
-`;
-
-const SiteLink = styled.a`
-	color: ${props => props.color};
-	font-weight: bold;
-	opacity: 0.8;
-	text-align: center;
-	text-decoration: none;
-
-	&:hover {
-		opacity: 1;
-		text-shadow: 4px 4px 8px black;
-		transition: all 200ms ease;
-		transform: scale(1.5);
-	}
-`;
-
-const ChalkBoard = styled.div`
-	// background-color: black;
-	background-color: ${props => (props.bgColor ? props.bgColor : 'black')};
-	border: 2px solid #666;
-	border-radius: 8px;
-	color: ${props => props.color};
-	// margin: auto;
-	// margin-top: 2rem;
-	margin: 2rem 1rem;
-	// max-width: 50%;
-	padding: 1.5rem 1rem;
-	text-align: center;
-
-	@media (min-width: 40rem) {
-		// margin-left: 6rem;
-		// margin: 3rem;
-	}
-`;
+import { develmonkIcon, trenchIcon } from 'images/images';
 
 const Blog = () => {
 	return (
@@ -87,7 +35,7 @@ const Blog = () => {
 									className='blog-link'
 								>
 									<img
-										src='/images/develmonk-monkey-clearbackground.png'
+										src={develmonkIcon}
 										width='120px'
 										height='92.5px'
 										alt='developer monkey website@develmonk.com'
@@ -135,7 +83,7 @@ const Blog = () => {
 									className='blog-link'
 								>
 									<img
-										src='/images/trench-for-buildings-120-96.jpg'
+										src={trenchIcon}
 										width='120px'
 										height='96px'
 										alt='link to averyfreeman.com'
@@ -147,7 +95,7 @@ const Blog = () => {
 					</div>
 				</div>
 			</CenteredRow>
-			<div style={{ margin: 0, padding: 0 }}>
+			<div style={{ margin: 0, paddingLeft: '5px' }}>
 				<div className='row text-center'>
 					<div className='d-flex flex-column align-items-center'>
 						<Heading Heading color={theme.capri} size={3} heightMargin={1}>

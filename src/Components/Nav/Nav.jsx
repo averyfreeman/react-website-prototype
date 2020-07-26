@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 import { Backdrop, PageContainer, ToggleContainer } from 'Styles/Nav/NavStyles';
 
 import Footer from 'Components/Nav/Footer';
-import NotFoundPage from 'NotFound';
+import NotFoundPage from 'Pages/NotFound';
 
 const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);

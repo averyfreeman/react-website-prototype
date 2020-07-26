@@ -86,6 +86,19 @@ export const CenteredRow = styled.div`
 	width: ${props => props.width};
 `;
 
+export const ChalkBoard = styled.div`
+	background-color: ${props => (props.bgColor ? props.bgColor : 'black')};
+	border: 2px solid #666;
+	border-radius: 8px;
+	color: ${props => props.color};
+	margin: 2rem 1rem;
+	padding: 1.5rem 1rem;
+	text-align: center;
+
+	@media (min-width: 40rem) {
+	}
+`;
+
 export const Column = styled.div`
 	display: flex;
 	width: 100vw;
@@ -105,8 +118,8 @@ export const Constrain = styled.div`
 	max-width: 50vw;
 
 	img {
-		height: 70%;
-		width: 70%;
+		max-height: 70%;
+		max-width: 70%;
 	}
 
 	@media (min-width: 60rem) {
@@ -156,6 +169,69 @@ export const Heading = styled.h1`
 	text-align: center;
 	text-shadow: 3px 3px 6px black;
 	width: 100%;
+`;
+
+export const HeroImage = styled.img`
+	border-radius: 50%;
+	border: 5px solid #555;
+	outline: black;
+`;
+
+export const Pcolumn = styled.p`
+	color: ${props =>
+		props.color ? props.color : theme.randomColor(backlightArray)};
+	display: flex;
+	flex-flow: column wrap;
+	text-align: justify;
+	text-shadow: 2px 2px 2px black;
+
+	@media (min-width: 40rem) {
+		margin-right: 20px;
+		max-width: 10rem;
+	}
+`;
+
+export const SiteBadge = styled.div`
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 20px;
+	display: block;
+	height: 10rem;
+	margin: 2rem auto;
+	opacity: 0.6;
+	padding: 1rem;
+	transition: all 200ms ease;
+	vertical-align: middle;
+	width: 10rem;
+
+	&:hover {
+		box-shadow: 3px 3px 6px black;
+		opacity: 1;
+		transition: all 200ms ease;
+		transform: scale(1.1);
+	}
+`;
+
+export const SiteLink = styled.a`
+	color: ${props => props.color};
+	font-weight: bold;
+	opacity: 0.8;
+	text-align: center;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 1;
+		text-shadow: 4px 4px 8px black;
+		transition: all 200ms ease;
+		transform: scale(1.5);
+	}
+`;
+
+export const SpacedFlexRow = styled.div`
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-top: 3rem;
 `;
 
 export const TextStyling = styled.div`

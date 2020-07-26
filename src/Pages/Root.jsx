@@ -11,7 +11,7 @@ import {
 	TextStyling
 } from 'Styles/Shared/PageStyles';
 
-const websiteGif = require('../images/website-collaboration-800-500.gif');
+import { rainyWeatherIcon, webDevIcon, websiteGif } from 'images/images';
 
 const Root = props => {
 	return (
@@ -41,7 +41,7 @@ const Root = props => {
 				<div className='col-md col-sm text-center mb-5'>
 					<Fade clear duration={1000} when={true} appear={true}>
 						<img
-							src={'/images/web-development-512.png'}
+							src={webDevIcon}
 							className='img-fluid text-center'
 							alt={'web development clip art'}
 						/>
@@ -84,7 +84,7 @@ const Root = props => {
 				<div className='col-md order-2 col-sm text-center mb-5'>
 					<Fade clear duration={1000} when={true} appear={true}>
 						<img
-							src='/images/rainy-weather-512.png'
+							src={rainyWeatherIcon}
 							className='img-fluid text-center'
 							alt='web development clip art'
 						/>
@@ -115,27 +115,24 @@ const Root = props => {
 								<br />
 								<li>
 									Make UI elements (buttons, icons, etc.) generic and reusable,
-									acquiring label and style attributes via props
+									acquiring label and style attributes via props (partially
+									completed)
 								</li>
 								<br />
 								<li>
-									Design reusable layout style components that render content
-									from json
+									Design reusable layout components that render content from
+									json
 								</li>
 								<br />
 								<li>
-									Implement reusable dynamic containers that make images conform
-									universally
-								</li>
-								<br />
-								<li>
-									<del>Add code syntax highlighting engine</del>
+									<del>Add code syntax highlighting engine</del> (completed)
 								</li>
 								<br />
 								<li>Create a toggler between light and dark modes</li>
 								<br />
 								<li>
-									<del>Add some more animations for transitions</del>
+									<del>Add some more animations for transitions</del>{' '}
+									(completed)
 								</li>
 							</ol>
 						</Fade>
