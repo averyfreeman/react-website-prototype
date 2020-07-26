@@ -1,0 +1,4 @@
+{
+	"presets": ["react-app", "@babel/preset-react", "@babel/preset-env"],
+    "plugins": ["babel-plugin-styled-components", "emotion"]
+}
