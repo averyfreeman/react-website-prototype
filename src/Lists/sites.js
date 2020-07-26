@@ -29,7 +29,6 @@ const sites = siteStart.map((site, idx) => {
 	site.id = `${site.label.slice(0, 3)}-${idx}`;
 	const newIndex =
 		idx >= backlightArray.length ? idx % backlightArray.length : idx;
-	console.log(newIndex);
 	site.color = backlightArray[newIndex];
 	return site;
 });
