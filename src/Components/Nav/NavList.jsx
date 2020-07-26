@@ -24,7 +24,7 @@ const override = css`
 `;
 
 export const directions = {
-	'/': () => <Root />,
+	'/Root': () => <Root />,
 	'/About': () => (
 		<Suspense
 			fallback={
