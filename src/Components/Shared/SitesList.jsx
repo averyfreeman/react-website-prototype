@@ -4,17 +4,18 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	background-color: black;
-	border: 5px solid #666;
+	border-top: 5px solid #555;
+	border-left: 5px solid #555;
+	border-right: 5px solid #444;
+	border-bottom: 5px solid #444;
 	border-radius: 20px;
 	padding: 1rem;
 
 	@media (min-width: 40rem) {
-		justify-content: center;
 		width: 96vw;
 	}
 
 	@media (min-width: 40rem) {
-		justify-content: center;
 		width: 92vw;
 	}
 `;
@@ -41,6 +42,7 @@ const SiteLink = styled.a`
 `;
 
 const SiteListItem = styled.li`
+	align-items: center;
 	background-color: ${props => (props.color ? props.color : '#ccc')};
 	border-bottom: 4px solid #333;
 	border-radius: 6px;
@@ -48,26 +50,24 @@ const SiteListItem = styled.li`
 	flex-flow: column nowrap;
 	font-size: ${props => (props.fontSize ? props.fontSize : 1)}rem;
 	justify-content: center;
-	opacity: 0.8;
+	margin: 2px 4px;
+	opacity: 0.7;
+	position: relative;
+	text-align: center;
 	transition: all 1s ease;
-
-	width: 100%;
 	vertical-align: middle;
 
 	@media (min-width: 40rem) {
-		width: calc(100% / 3);
+		width: calc(100% / 6);
 	}
 
-	@media (min-width: 60rem) {
-		width: calc(100% / 4);
+	@media (min-width: 66rem) {
+		width: calc(100% / 8);
 	}
 
 	&:hover {
-		border-bottom: none;
-		border-left: none;
-		color: white;
+		box-shadow: 3px 3px 6px #666;
 		opacity: 1;
-		text-shadow: 2px 2px 5px black;
 		transform: scale(0.9);
 		transition: all 200ms ease;
 	}
@@ -78,16 +78,15 @@ const SiteLabel = styled.h3`
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: ${props => (props.fontSize ? props.fontSize : 1)}rem;
 	font-weight: bold;
-	opacity: 0.6;
+	opacity: 0.7;
 	transition: all 200ms ease;
-	width: 100%;
 
 	&:hover {
 		color: white;
 		opacity: 1;
 		text-shadow: 2px 2px 5px black;
-		transition: all 1s ease;
-		transform: scale(1.2);
+		transition: all 600ms ease;
+		transform: scale(1.3);
 	}
 `;
 
@@ -95,9 +94,7 @@ const Item = ({ color, href, id, label, rel, target }) => {
 	const [isActive, setIsActive] = useState(false);
 	return (
 		<SiteListItem
-			className={`list-group-item ${
-				isActive ? 'list-group-item-action active' : ''
-			}`}
+			className={`list-group-item ${isActive ? '' : ''}`}
 			color={color}
 			data-key={id}
 			onMouseEnter={() => setIsActive(true)}

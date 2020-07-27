@@ -1,18 +1,18 @@
 import { backlightArray } from 'Styles/Shared/PageStyles';
 
 const siteStart = [
-	{ label: 'StackOverflow', href: 'https://stackoverflow.com' },
+	{ label: 'Stack Overflow', href: 'https://stackoverflow.com' },
 	{ label: 'rwieruch', href: 'https://www.robinwieruch.de/blog' },
 	{ label: 'ITNext.io', href: 'https://itnext.io/' },
 	{ label: 'Dev.to', href: 'https://dev.to/' },
 	{
-		label: `ycombninator ('Hacker News')`,
+		label: `Hacker News`,
 		href: 'https://news.ycombinator.com/'
 	},
-	{ label: 'OpenBase.io', href: 'https://openbase.io/' },
+	{ label: 'OpenBase .io', href: 'https://openbase.io/' },
 	{ label: 'Coolors.co', href: 'https://coolors.co/' },
 	{ label: 'GitHub', href: 'https://www.github.com/' },
-	{ label: '/r/homelab/', href: 'https://www.reddit.com/r/homelab/' },
+	{ label: '/r/homelab', href: 'https://www.reddit.com/r/homelab/' },
 	{
 		label: 'Thomas-Krenn',
 		href: 'https://www.thomas-krenn.com/en/wiki/Main_Page'

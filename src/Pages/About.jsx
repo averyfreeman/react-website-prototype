@@ -37,6 +37,11 @@ const About = props => {
 									I'm an aspiring web developer who loves using React.
 								</Pcolumn>
 								<Pcolumn>
+									I've been an avid homelab enthusiast for the last decade, and
+									do sidework in networking, security cameras, and computer
+									troubleshooting.
+								</Pcolumn>
+								<Pcolumn>
 									A few months ago I lost my job due to coronavirus and I've
 									been working hard ever since to teach myself programming using
 									Javascript and CSS.

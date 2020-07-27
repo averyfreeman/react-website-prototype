@@ -45,7 +45,12 @@ export const directions = {
 		<Suspense
 			fallback={
 				<LoaderContainer>
-					<ScaleLoader css={override} size={35} color={'#777'} loading={true} />
+					<ScaleLoader
+						css={override}
+						size={35}
+						color={'black'}
+						loading={true}
+					/>
 				</LoaderContainer>
 			}
 		>
@@ -56,7 +61,12 @@ export const directions = {
 		<Suspense
 			fallback={
 				<LoaderContainer>
-					<ScaleLoader css={override} size={35} color={'#777'} loading={true} />
+					<ScaleLoader
+						css={override}
+						size={35}
+						color={'black'}
+						loading={true}
+					/>
 				</LoaderContainer>
 			}
 		>
@@ -67,7 +77,12 @@ export const directions = {
 		<Suspense
 			fallback={
 				<LoaderContainer>
-					<ScaleLoader css={override} size={35} color={'#777'} loading={true} />
+					<ScaleLoader
+						css={override}
+						size={35}
+						color={'black'}
+						loading={true}
+					/>
 				</LoaderContainer>
 			}
 		>
@@ -76,13 +91,18 @@ export const directions = {
 	)
 };
 
-const NavList = routes => {
+const NavList = (routes, toggleClickHandler) => {
 	// console.log('NavList width = ' + props);
 	return (
 		<NavContainer>
 			<ul>
 				{routes.map(({ key, href, label }) => (
-					<A href={href} key={key} className='route-link'>
+					<A
+						href={href}
+						key={key}
+						className='route-link'
+						onClick={toggleClickHandler}
+					>
 						<li className={href === window.location.pathname ? 'active' : null}>
 							{label}
 						</li>

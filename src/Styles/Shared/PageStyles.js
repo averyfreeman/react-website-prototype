@@ -88,7 +88,10 @@ export const CenteredRow = styled.div`
 
 export const ChalkBoard = styled.div`
 	background-color: ${props => (props.bgColor ? props.bgColor : 'black')};
-	border: 2px solid #666;
+	border-top: 5px solid #555;
+	border-left: 5px solid #555;
+	border-right: 5px solid #444;
+	border-bottom: 5px solid #444;
 	border-radius: 8px;
 	color: ${props => props.color};
 	margin: 2rem 1rem;

@@ -37,13 +37,13 @@ const Nav = () => {
 							</div>
 							<Fade
 								when={isOpen}
-								duration={200}
+								duration={400}
 								left
 								cascade
 								collapse
 								className='mobile-menu'
 							>
-								{NavList(routes)}
+								{NavList(routes, toggleClickHandler)}
 							</Fade>
 						</ToggleContainer>
 						<PageContainer
